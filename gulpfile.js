@@ -68,8 +68,8 @@ gulp.task('css:compile', function() {
 // Minify CSS
 gulp.task('css:minify', ['css:compile'], function() {
   return gulp.src([
-      './css/*.css',
-      '!./css/*.min.css'
+      './public/css/*.css',
+      '!./public/css/*.min.css'
     ])
     .pipe(cleanCSS())
     .pipe(rename({
@@ -85,8 +85,8 @@ gulp.task('css', ['css:compile', 'css:minify']);
 // Minify JavaScript
 gulp.task('js:minify', function() {
   return gulp.src([
-      './js/*.js',
-      '!./js/*.min.js'
+      './public/js/*.js',
+      '!./public/js/*.min.js'
     ])
     .pipe(uglify())
     .pipe(rename({
@@ -114,6 +114,6 @@ gulp.task('browserSync', function() {
 // Dev task
 gulp.task('dev', ['css', 'js', 'browserSync'], function() {
   gulp.watch('./scss/*.scss', ['css']);
-  gulp.watch('./js/*.js', ['js']);
-  gulp.watch('./*.html', browserSync.reload);
+  gulp.watch('./public/js/*.js', ['js']);
+  gulp.watch('./public/*.html', browserSync.reload);
 });

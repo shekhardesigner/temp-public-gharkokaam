@@ -359,6 +359,22 @@ section.contact ul.list-social li.social-facebook a:hover {
   background-color: #344e86;
 }
 
+section.contact ul.list-social li.social-instagram a {
+  background-color: #e1306c;
+}
+
+section.contact ul.list-social li.social-instagram a:hover {
+  background-color: #d81f5e;
+}
+
+section.contact ul.list-social li.social-youtube a {
+  background-color: #ff0000;
+}
+
+section.contact ul.list-social li.social-youtube a:hover {
+  background-color: #e60000;
+}
+
 section.contact ul.list-social li.social-google-plus a {
   background-color: #dd4b39;
 }
